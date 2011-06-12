@@ -383,6 +383,24 @@ body form.inline p {
 * html #content .content_up {
   overflow-x: hidden;
 }
+#content .content_up .news {
+  background: url('../images/news.png?1307898445');
+  height: 108px;
+  width: 129px;
+  float: left;
+}
+#content .content_up .show {
+  background: url('../images/show.png?1307898467');
+  height: 108px;
+  width: 153px;
+  float: left;
+}
+#content .content_up .information {
+  background: url('../images/info.png?1307898485');
+  height: 108px;
+  width: 125px;
+  float: left;
+}
 #content .logo {
   background: url('../images/logosite.jpg?1307895623');
   height: 373px;
@@ -400,4 +418,27 @@ body form.inline p {
 }
 * html #content .downcontent {
   overflow-x: hidden;
+}
+#content .downcontent .menu_down {
+  margin-top: -120px;
+  float: right;
+  width: 358px;
+}
+#content .downcontent .menu_down .music {
+  background: url('../images/music.png?1307900150');
+  height: 138px;
+  width: 109px;
+  float: left;
+}
+#content .downcontent .menu_down .videos {
+  background: url('../images/videos.png?1307900165');
+  height: 138px;
+  width: 118px;
+  float: left;
+}
+#content .downcontent .menu_down .photos {
+  background: url('../images/photos.png?1307900186');
+  height: 138px;
+  width: 131px;
+  float: left;
 }
