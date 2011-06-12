@@ -6,4 +6,6 @@ html
   body
     #container
       #content
-        == yield
+        == render partial: 'upcontent'
+        == render partial: 'center'
+        == render partial: 'downcontent'

@@ -14,10 +14,24 @@ body
   // Remove the scaffolding when you're ready to start doing visual design.
   // Or leave it in if you're happy with how blueprint looks out-of-the-box
   +blueprint-scaffolding
-  padding: 10px
+  background: #2E1313
 
 #container
   +container
 #content
-  +column($blueprint-grid-columns)
-
+  +column($blueprint-grid-columns, true)
+  .content_up
+    +column (15, true)
+    background: #CA2027
+    height: 700px
+    float: left
+  .logo
+    background: image-url("logosite.jpg")
+    height: 373px
+    float: left
+    width: 590px
+  .downcontent
+    +column (15, true)
+    background: #86C0A9
+    height: 700px
+    float: left
