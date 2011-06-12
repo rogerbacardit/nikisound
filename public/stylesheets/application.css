@@ -383,19 +383,22 @@ body form.inline p {
 * html #content .content_up {
   overflow-x: hidden;
 }
-#content .content_up .news {
+#content .content_up .menu_up {
+  margin-top: 625px;
+}
+#content .content_up .menu_up .news {
   background: url('../images/news.png?1307898445');
   height: 108px;
   width: 129px;
   float: left;
 }
-#content .content_up .show {
+#content .content_up .menu_up .show {
   background: url('../images/show.png?1307898467');
   height: 108px;
   width: 153px;
   float: left;
 }
-#content .content_up .information {
+#content .content_up .menu_up .information {
   background: url('../images/info.png?1307898485');
   height: 108px;
   width: 125px;
