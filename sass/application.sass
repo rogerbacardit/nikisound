@@ -3,8 +3,17 @@
 @import blueprint
 @import blueprint/scaffolding
 @import compass/css3
+@import "compass/css3/transform"
 
 +global-reset
+
+@font-face
+  font-family: 'BebasNeue'
+  src: url('../fonts/bebas-neue/BebasNeue.eot')
+  src: local("☺"), url('/fonts/bebas-neue/BebasNeue.ttf') format("truetype"), url('/fonts/bebas-neue/BabasNeue.svg#iconic') format("svg")
+  font-weight: normal
+  font-style: normal
+
 
 body
   +blueprint-typography(true)
@@ -23,51 +32,133 @@ body
   .content_up
     +column (15, true)
     background: #CA2027
-    height: 700px
     float: left
     .menu_up
-      margin-top: 625px
-      .news
-        background: image-url('news.png')
-        height: 108px
-        width: 129px
-        float: left
-      .show
-        background: image-url('show.png')
-        height: 108px
-        width: 153px
-        float: left
-      .information
-        background: image-url('info.png')
-        height: 108px
-        width: 125px
-        float: left
-  .logo
-    background: image-url("logosite.jpg")
-    height: 373px
+      margin-top: 638px
+      overflow: auto
+      position: relative
+
+.photo
+  height: 130px
+  width: 130px
+  background: green
+  float: left
+  margin-right: 10px
+.photo_last
+  margin-right: 0px
+  background: yellow
+  width: 40px
+
+
+
+.content_box
+  padding: 20px
+  .title
+    font-family: "BebasNeue"
+    font-weight: bold
+    font-size: 45px
+    padding: 15px
+    padding-left: 0px
+    .show_list
+
+    .text_up
+      font-family: "Trebuchet MS"
+      font-size: 12px
+      padding: 15px
+      padding-left: 0px
+
+  .show_table
+    font-family: "BebasNeue"
+    padding: 30px
+    padding-right: 0px
+    padding-left: 0px
+    padding-top: 0px
+
+  .show_list
+    font-size: 20px
+    padding: 15px
+    +horizontal_list
+    .where
+      margin-right: 150px
+    .when
+      margin-right: 85px
+    .time
+      margin-right: 60px
+    .location
+      margin-right: 0px
+
+  .list
+    font-size: 14px
+    font-family: "Trebuchet MS"
+    +horizontal_list
+    .where
+      margin-right: 110px
+    .location
+      margin-right: 0px
+
+    li
+      margin-right: 35px
+
+.logo
+  background: image-url("logosite.jpg")
+  margin-top: -35px
+  height: 373px
+  float: left
+  width: 590px
+  .news
+    background: image-url('news.png')
+    height: 108px
+    width: 129px
     float: left
-    width: 590px
-  .downcontent
-    +column (15, true)
-    background: #86C0A9
-    height: 700px
+    z-index: 9
+    margin-top: -20px
+  .show
+    background: image-url('show.png')
+    height: 108px
+    width: 153px
     float: left
-    .menu_down
-      margin-top: -120px
-      float: right
-      width: 358px
-      .music
-        background: image-url('music.png')
-        height: 138px
-        width: 109px
-        float: left
-      .videos
-        background: image-url('videos.png')
-        height: 138px
-        width: 118px
-        float: left
-      .photos
-        background: image-url('photos.png')
-        height: 138px
-        width: 131px
-        float: left
+    margin-top: -20px
+  .information
+    background: image-url('info.png')
+    height: 108px
+    width: 125px
+    float: left
+    margin-top: -20px
+
+  .music
+    background: image-url('music.png')
+    height: 138px
+    width: 109px
+    float: right
+    position: relative
+    margin-top: 240px
+
+
+  .videos
+    background: image-url('videos.png')
+    height: 138px
+    width: 118px
+    float: right
+    position: relative
+    margin-top: 184px
+
+
+  .photos
+    background: image-url('photos.png')
+    height: 138px
+    width: 131px
+    float: right
+    position: relative
+    margin-top: 220px
+
+
+.downcontent
+  +column (15, true)
+  background: #86C0A9
+  height: 700px
+  float: left
+  .menu_down
+    +skew (0deg, -8deg, false)
+    margin-top: -120px
+    float: right
+    width: 358px
