@@ -396,19 +396,33 @@ body form.inline p {
   overflow: auto;
   position: relative;
 }
-
-.photo {
-  height: 130px;
+#content .border {
+  border: 1px solid grey;
   width: 130px;
-  background: green;
-  float: left;
-  margin-right: 10px;
+  background: white;
+  padding: 20px;
+  -moz-box-shadow: grey 1px 1px 5px;
+  -webkit-box-shadow: grey 1px 1px 5px;
+  -o-box-shadow: grey 1px 1px 5px;
+  box-shadow: grey 1px 1px 5px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(#ffffff, #dddddd);
+  background-image: -moz-linear-gradient(#ffffff, #dddddd);
+  background-image: -o-linear-gradient(#ffffff, #dddddd);
+  background-image: linear-gradient(#ffffff, #dddddd);
+}
+#content .border .photo {
+  height: 130px;
+  background: white;
 }
 
 .photo_last {
   margin-right: 0px;
   background: yellow;
-  width: 40px;
+  width: 110px;
+  height: 110px;
+  border: 10px solid black;
+  float: left;
 }
 
 .content_box {
