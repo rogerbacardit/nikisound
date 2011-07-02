@@ -399,8 +399,11 @@ body form.inline p {
 #content .border {
   border: 1px solid grey;
   width: 130px;
+  float: left;
   background: white;
   padding: 20px;
+  margin-right: 13px;
+  margin-bottom: 20px;
   -moz-box-shadow: grey 1px 1px 5px;
   -webkit-box-shadow: grey 1px 1px 5px;
   -o-box-shadow: grey 1px 1px 5px;
@@ -415,14 +418,39 @@ body form.inline p {
   height: 130px;
   background: white;
 }
-
-.photo_last {
-  margin-right: 0px;
-  background: yellow;
-  width: 110px;
-  height: 110px;
-  border: 10px solid black;
+#content .border:hover {
+  -moz-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+#content .border_last {
+  border: 1px solid grey;
+  width: 130px;
   float: left;
+  background: white;
+  padding: 20px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  -moz-box-shadow: grey 1px 1px 5px;
+  -webkit-box-shadow: grey 1px 1px 5px;
+  -o-box-shadow: grey 1px 1px 5px;
+  box-shadow: grey 1px 1px 5px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(#ffffff, #dddddd);
+  background-image: -moz-linear-gradient(#ffffff, #dddddd);
+  background-image: -o-linear-gradient(#ffffff, #dddddd);
+  background-image: linear-gradient(#ffffff, #dddddd);
+}
+#content .border_last .photo {
+  height: 130px;
+  background: white;
+}
+#content .border_last:hover {
+  -moz-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
 }
 
 .content_box {
@@ -596,7 +624,6 @@ body form.inline p {
   -moz-transform: skew(0deg, -8deg);
   -webkit-transform: skew(0deg, -8deg);
   -o-transform: skew(0deg, -8deg);
-  -ms-transform: skew(0deg, -8deg);
   transform: skew(0deg, -8deg);
   margin-top: -120px;
   float: right;
