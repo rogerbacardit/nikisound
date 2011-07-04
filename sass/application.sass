@@ -7,6 +7,10 @@
 @import "compass/css3/gradient"
 @import "compass/css3/box-shadow"
 @import "compass/css3/transform-legacy"
+@import "compass/utilities/tables/borders"
+@import "compass/css3/border-radius"
+
+
 
 +global-reset
 
@@ -71,54 +75,97 @@ body
   .border_last:hover
     +rotate(5deg)
 
+ul.show_list
+  border-bottom: 1px dotted #F9F29D
+  margin-bottom: 20px
+
+ul.list
+  padding-top: 20px
+  border-bottom: 1px dotted #F9F29D
+
+ul.list_opp
+  background: #902027
+  padding-top: 20px
+  border-bottom: 1px dotted #F9F29D
+
 
 .content_box
-  padding: 20px
+  padding: 15px
+  padding-left: 0px
+
+.content_box_show
+  padding: 0px
   .title
-    font-family: "BebasNeue"
-    font-weight: bold
-    font-size: 45px
-    padding: 15px
-    padding-left: 0px
-    .show_list
 
-    .text_up
-      font-family: "Trebuchet MS"
-      font-size: 12px
-      padding: 15px
-      padding-left: 0px
-
-  .show_table
-    font-family: "BebasNeue"
-    padding: 30px
-    padding-right: 0px
-    padding-left: 0px
-    padding-top: 0px
-
+.title
+  font-family: "BebasNeue"
+  font-weight: bold
+  font-size: 45px
+  margin-left: 20px
   .show_list
-    font-size: 20px
-    padding: 15px
-    +horizontal_list
-    .where
-      margin-right: 150px
-    .when
-      margin-right: 85px
-    .time
-      margin-right: 60px
-    .location
-      margin-right: 0px
-
-  .list
-    font-size: 14px
     font-family: "Trebuchet MS"
-    +horizontal_list
-    .where
-      margin-right: 110px
-    .location
-      margin-right: 0px
+.text_up
+  font-family: "Trebuchet MS"
+  font-size: 12px
+  font-weight: 100
+  padding-left: 21px
 
-    li
-      margin-right: 35px
+.show_table
+  font-family: "BebasNeue"
+  padding: 30px
+  padding-right: 0px
+  padding-left: 0px
+  padding-top: 0px
+
+
+.show_list
+  font-size: 16px
+  font-weight: 900
+  margin-bottom: 30px
+  +horizontal_list
+  .where
+    margin-right: 140px
+    margin-left: 20px
+  .when
+    margin-right: 95px
+  .time
+    margin-right: 60px
+  .location
+    margin-right: 0px
+
+
+.list_opp
+  border: 1px solid grey
+  font-size: 14px
+  height: 40px
+  font-family: "Trebuchet MS"
+  +horizontal_list
+  .where
+    margin-right: 110px
+    margin-left: 20px
+  .location
+    margin-right: 0px
+  .time
+    margin-right: 40px
+  li
+    margin-right: 45px
+
+.list
+  border: 1px solid grey
+  padding: 10px
+  font-size: 14px
+  height: 40px
+  font-family: "Trebuchet MS"
+  +horizontal_list
+  .where
+    margin-right: 110px
+    margin-left: 20px
+  .location
+    margin-right: 0px
+  .time
+    margin-right: 40px
+  li
+    margin-right: 45px
 
 .logo
   background: image-url("logosite.jpg")
@@ -189,3 +236,22 @@ body
   font-size: 15px
   font-weight: 900
   color: #CA2027
+
+.twit
+  margin-left: 20px
+  height: 200px
+
+
+.twitts
+  font-family: "Trebuchet MS"
+  font-weight: bold
+  color: black
+  font-size: 10px
+  float: left
+
+.tw_avatar
+  height: 48px
+  width: 48px
+  border: 6px solid #CA2027
+  background: black
+

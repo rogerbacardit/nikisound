@@ -453,39 +453,67 @@ body form.inline p {
   transform: rotate(5deg);
 }
 
-.content_box {
-  padding: 20px;
+ul.show_list {
+  border-bottom: 1px dotted #f9f29d;
+  margin-bottom: 20px;
 }
-.content_box .title {
+
+ul.list {
+  padding-top: 20px;
+  border-bottom: 1px dotted #f9f29d;
+}
+
+ul.list_opp {
+  background: #902027;
+  padding-top: 20px;
+  border-bottom: 1px dotted #f9f29d;
+}
+
+.content_box {
+  padding: 15px;
+  padding-left: 0px;
+}
+
+.content_box_show {
+  padding: 0px;
+}
+
+.title {
   font-family: "BebasNeue";
   font-weight: bold;
   font-size: 45px;
-  padding: 15px;
-  padding-left: 0px;
+  margin-left: 20px;
 }
-.content_box .title .text_up {
+.title .show_list {
+  font-family: "Trebuchet MS";
+}
+
+.text_up {
   font-family: "Trebuchet MS";
   font-size: 12px;
-  padding: 15px;
-  padding-left: 0px;
+  font-weight: 100;
+  padding-left: 21px;
 }
-.content_box .show_table {
+
+.show_table {
   font-family: "BebasNeue";
   padding: 30px;
   padding-right: 0px;
   padding-left: 0px;
   padding-top: 0px;
 }
-.content_box .show_list {
-  font-size: 20px;
-  padding: 15px;
+
+.show_list {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 30px;
   margin: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
   *zoom: 1;
 }
-.content_box .show_list li {
+.show_list li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0px;
@@ -495,29 +523,33 @@ body form.inline p {
   padding-left: 4px;
   padding-right: 4px;
 }
-.content_box .show_list li:first-child, .content_box .show_list li.first {
+.show_list li:first-child, .show_list li.first {
   padding-left: 0;
 }
-.content_box .show_list li:last-child {
+.show_list li:last-child {
   padding-right: 0;
 }
-.content_box .show_list li.last {
+.show_list li.last {
   padding-right: 0;
 }
-.content_box .show_list .where {
-  margin-right: 150px;
+.show_list .where {
+  margin-right: 140px;
+  margin-left: 20px;
 }
-.content_box .show_list .when {
-  margin-right: 85px;
+.show_list .when {
+  margin-right: 95px;
 }
-.content_box .show_list .time {
+.show_list .time {
   margin-right: 60px;
 }
-.content_box .show_list .location {
+.show_list .location {
   margin-right: 0px;
 }
-.content_box .list {
+
+.list_opp {
+  border: 1px solid grey;
   font-size: 14px;
+  height: 40px;
   font-family: "Trebuchet MS";
   margin: 0;
   padding: 0;
@@ -525,7 +557,7 @@ body form.inline p {
   overflow: hidden;
   *zoom: 1;
 }
-.content_box .list li {
+.list_opp li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0px;
@@ -535,23 +567,72 @@ body form.inline p {
   padding-left: 4px;
   padding-right: 4px;
 }
-.content_box .list li:first-child, .content_box .list li.first {
+.list_opp li:first-child, .list_opp li.first {
   padding-left: 0;
 }
-.content_box .list li:last-child {
+.list_opp li:last-child {
   padding-right: 0;
 }
-.content_box .list li.last {
+.list_opp li.last {
   padding-right: 0;
 }
-.content_box .list .where {
+.list_opp .where {
   margin-right: 110px;
+  margin-left: 20px;
 }
-.content_box .list .location {
+.list_opp .location {
   margin-right: 0px;
 }
-.content_box .list li {
-  margin-right: 35px;
+.list_opp .time {
+  margin-right: 40px;
+}
+.list_opp li {
+  margin-right: 45px;
+}
+
+.list {
+  border: 1px solid grey;
+  padding: 10px;
+  font-size: 14px;
+  height: 40px;
+  font-family: "Trebuchet MS";
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+.list li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.list li:first-child, .list li.first {
+  padding-left: 0;
+}
+.list li:last-child {
+  padding-right: 0;
+}
+.list li.last {
+  padding-right: 0;
+}
+.list .where {
+  margin-right: 110px;
+  margin-left: 20px;
+}
+.list .location {
+  margin-right: 0px;
+}
+.list .time {
+  margin-right: 40px;
+}
+.list li {
+  margin-right: 45px;
 }
 
 .logo {
@@ -635,4 +716,24 @@ body form.inline p {
   font-size: 15px;
   font-weight: 900;
   color: #ca2027;
+}
+
+.twit {
+  margin-left: 20px;
+  height: 200px;
+}
+
+.twitts {
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  color: black;
+  font-size: 10px;
+  float: left;
+}
+
+.tw_avatar {
+  height: 48px;
+  width: 48px;
+  border: 6px solid #ca2027;
+  background: black;
 }
