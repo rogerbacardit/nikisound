@@ -1,0 +1,330 @@
+@import base
+@import compass
+@import blueprint
+@import blueprint/scaffolding
+@import compass/css3
+@import "compass/css3/transform"
+@import "compass/css3/gradient"
+@import "compass/css3/box-shadow"
+@import "compass/css3/transform-legacy"
+@import "compass/utilities/tables/borders"
+@import "compass/css3/border-radius"
+@import "compass/css3/transition"
+@import "compass/typography/links/link-colors"
+
++global-reset
+
+@font-face
+  font-family: 'BebasNeue'
+  src: url('../fonts/bebas-neue/BebasNeue.eot')
+  src: local("☺"), url('/fonts/bebas-neue/BebasNeue.ttf') format("truetype"), url('/fonts/bebas-neue/BabasNeue.svg#iconic') format("svg")
+  font-weight: normal
+  font-style: normal
+
+
+body
+  +blueprint-typography(true)
+  +blueprint-utilities
+  +blueprint-debug
+  +blueprint-interaction
+  // Remove the scaffolding when you're ready to start doing visual design.
+  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+  +blueprint-scaffolding
+  background: #2E1313
+
+#container
+  +container
+#content
+  +column($blueprint-grid-columns, true)
+  .content_up
+    +column (15, true)
+    background: #CA2027
+    float: left
+    .menu_up
+      margin-top: 638px
+      overflow: auto
+      position: relative
+  .border
+    border: 1px solid grey
+    width: 130px
+    float: left
+    background: white
+    padding: 20px
+    margin-right: 13px
+    margin-bottom: 20px
+    +box-shadow(grey 1px 1px 5px)
+    +background-image(linear-gradient(#fff, #ddd))
+    .photo
+      height: 130px
+      background: white
+  .border:hover
+    +rotate(5deg)
+    +transition-duration(1s)
+  .border_last
+    border: 1px solid grey
+    width: 130px
+    float: left
+    background: white
+    padding: 20px
+    margin-right: 0px
+    margin-bottom: 20px
+    +box-shadow(grey 1px 1px 5px)
+    +background-image(linear-gradient(#fff, #ddd))
+    .photo
+      height: 130px
+      background: white
+  .border_last:hover
+    +rotate(5deg)
+    +transition-duration(1s)
+
+ul.show_list
+  border-bottom: 1px dotted #F9F29D
+  margin-bottom: 20px
+
+ul.list
+  padding-top: 20px
+  border-bottom: 1px dotted #F9F29D
+
+ul.list_opp
+  background: #902027
+  padding-top: 20px
+  border-bottom: 1px dotted #F9F29D
+
+
+.content_box
+  padding: 15px
+  padding-left: 0px
+
+.content_box_show
+  padding: 0px
+  .title
+
+.title
+  font-family: "BebasNeue"
+  font-weight: bold
+  font-size: 45px
+  margin-left: 20px
+  .show_list
+    font-family: "Trebuchet MS"
+.text_up
+  font-family: "Trebuchet MS"
+  font-size: 12px
+  font-weight: 100
+  padding-left: 21px
+
+.show_table
+  font-family: "BebasNeue"
+  padding: 30px
+  padding-right: 0px
+  padding-left: 0px
+  padding-top: 0px
+
+
+.show_list
+  font-size: 16px
+  font-weight: 900
+  margin-bottom: 30px
+  +horizontal_list
+  .where
+    margin-right: 140px
+    margin-left: 20px
+  .when
+    margin-right: 95px
+  .time
+    margin-right: 60px
+  .location
+    margin-right: 0px
+
+
+.list_opp
+  border: 1px solid grey
+  font-size: 14px
+  height: 40px
+  font-family: "Trebuchet MS"
+  +horizontal_list
+  .where
+    margin-right: 110px
+    margin-left: 20px
+  .location
+    margin-right: 0px
+  .time
+    margin-right: 40px
+  li
+    margin-right: 45px
+
+.list
+  border: 1px solid grey
+  padding: 10px
+  font-size: 14px
+  height: 40px
+  font-family: "Trebuchet MS"
+  +horizontal_list
+  .where
+    margin-right: 110px
+    margin-left: 20px
+  .location
+    margin-right: 0px
+  .time
+    margin-right: 40px
+  li
+    margin-right: 45px
+
+.logo
+  background: image-url("logosite.jpg")
+  margin-top: -35px
+  height: 373px
+  float: left
+  width: 590px
+  .news
+    background: image-url('news.png')
+    height: 108px
+    width: 129px
+    float: left
+    z-index: 9
+    margin-top: -20px
+  .show
+    background: image-url('show.png')
+    height: 108px
+    width: 153px
+    float: left
+    margin-top: -20px
+  .information
+    background: image-url('info.png')
+    height: 108px
+    width: 125px
+    float: left
+    margin-top: -20px
+
+  .music
+    background: image-url('music.png')
+    height: 138px
+    width: 109px
+    float: right
+    position: relative
+    margin-top: 240px
+
+
+  .videos
+    background: image-url('videos.png')
+    height: 138px
+    width: 118px
+    float: right
+    position: relative
+    margin-top: 184px
+
+
+  .photos
+    background: image-url('photos.png')
+    height: 138px
+    width: 131px
+    float: right
+    position: relative
+    margin-top: 220px
+
+
+.downcontent
+  +column (15, true)
+  background: #86C0A9
+  float: left
+  .menu_down
+    +skew (0deg, -8deg, false)
+    margin-top: -120px
+    float: right
+    width: 358px
+
+.sub_title
+  margin-top: 30px
+  margin-left: 20px
+  margin-bottom: 10px
+  font-size: 15px
+  font-weight: 900
+  color: #CA2027
+.movie
+  margin-left: 20px
+  margin-right: 0px
+
+.twit
+  margin-left: 20px
+  height: 25%
+  .twitts
+    font-family: "Trebuchet MS"
+    font-weight: bold
+    float: left
+    width: 80%
+    padding-top: 5px
+    margin-top: -5px
+.nick
+  font-size: 13px
+  font-weight: 900
+  color: #2E1313
+
+.tw_avatar
+  height: 50px
+  width: 50px
+  margin-top: 5px
+  margin-left: 20px
+  margin-right: 8px
+  margin-bottom: 30px
+  float: left
+  background: black
+
+.twit_act
+  float: left
+  color: #2E1313
+  font-size: 12px
+  font-weight: bold
+  +horizontal_list
+
+.end
+  height: 10px
+  width: 30%
+  margin: 0px auto
+  border-bottom: 1px dotted #F9F29D
+  margin-top: 20px
+  margin-bottom: 20px
+
+.content_photos
+  height: 100%
+  margin-left: 20px
+  margin-bottom: 50px
+
+.content_music
+  height: 200px
+  width: 80%
+  margin: 0px auto
+  padding: 20px
+  background: #5B8272
+  .thumb_EP
+    height: 150px
+    width: 150px
+    background: red
+    margin-right: 20px
+    margin-bottom: 10px
+    float: left
+
+  .name_EP
+    font-size: 30px
+    font-weight: bold
+    float: left
+    line-height: 20px
+  .player
+    height: 50px
+    width: 290px
+    float: right
+
+.links_music
+  margin-left: 0px
+  height: 20px
+  color: #F9F29D
+  float: none
+  float: left
+  font-weight: bold
+  +horizontal_list
+  +link-colors(#F9F29D, black, white, #F9F29D, yellow)
+.content_music_up
+  height: 160px
+  ul
+    padding: 0px
+    li
+      a
+        margin-left: 0px
