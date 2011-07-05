@@ -9,7 +9,7 @@
 @import "compass/css3/transform-legacy"
 @import "compass/utilities/tables/borders"
 @import "compass/css3/border-radius"
-
+@import "compass/css3/transition"
 
 
 +global-reset
@@ -239,19 +239,32 @@ ul.list_opp
 
 .twit
   margin-left: 20px
-  height: 200px
-
-
-.twitts
-  font-family: "Trebuchet MS"
-  font-weight: bold
-  color: black
-  font-size: 10px
-  float: left
+  height: 25%
+  .twitts
+    font-family: "Trebuchet MS"
+    font-weight: bold
+    float: left
+    width: 80%
+    padding-top: 5px
+    margin-top: -5px
+.nick
+  font-size: 13px
+  font-weight: 900
+  color: #2E1313
 
 .tw_avatar
-  height: 48px
-  width: 48px
-  border: 6px solid #CA2027
+  height: 50px
+  width: 50px
+  margin-top: 5px
+  margin-left: 20px
+  margin-right: 8px
+  margin-bottom: 30px
+  float: left
   background: black
 
+.twit_act
+  float: left
+  color: #2E1313
+  font-size: 12px
+  font-weight: bold
+  +horizontal_list

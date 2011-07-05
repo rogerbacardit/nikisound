@@ -720,20 +720,61 @@ ul.list_opp {
 
 .twit {
   margin-left: 20px;
-  height: 200px;
+  height: 25%;
 }
-
-.twitts {
+.twit .twitts {
   font-family: "Trebuchet MS";
   font-weight: bold;
-  color: black;
-  font-size: 10px;
   float: left;
+  width: 80%;
+  padding-top: 5px;
+  margin-top: -5px;
+}
+
+.nick {
+  font-size: 13px;
+  font-weight: 900;
+  color: #2e1313;
 }
 
 .tw_avatar {
-  height: 48px;
-  width: 48px;
-  border: 6px solid #ca2027;
+  height: 50px;
+  width: 50px;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 8px;
+  margin-bottom: 30px;
+  float: left;
   background: black;
+}
+
+.twit_act {
+  float: left;
+  color: #2e1313;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+.twit_act li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.twit_act li:first-child, .twit_act li.first {
+  padding-left: 0;
+}
+.twit_act li:last-child {
+  padding-right: 0;
+}
+.twit_act li.last {
+  padding-right: 0;
 }
