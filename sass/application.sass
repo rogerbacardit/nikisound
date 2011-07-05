@@ -59,6 +59,7 @@ body
       background: white
   .border:hover
     +rotate(5deg)
+    +transition-duration(1s)
   .border_last
     border: 1px solid grey
     width: 130px
@@ -74,6 +75,7 @@ body
       background: white
   .border_last:hover
     +rotate(5deg)
+    +transition-duration(1s)
 
 ul.show_list
   border-bottom: 1px dotted #F9F29D
@@ -231,11 +233,15 @@ ul.list_opp
     width: 358px
 
 .sub_title
-  margin-top: 20px
+  margin-top: 30px
+  margin-left: 20px
   margin-bottom: 10px
   font-size: 15px
   font-weight: 900
   color: #CA2027
+.movie
+  margin-left: 20px
+  margin-right: 0px
 
 .twit
   margin-left: 20px
@@ -268,3 +274,16 @@ ul.list_opp
   font-size: 12px
   font-weight: bold
   +horizontal_list
+
+.end
+  height: 10px
+  width: 30%
+  margin: 0px auto
+  border-bottom: 1px dotted #F9F29D
+  margin-top: 20px
+  margin-bottom: 50px
+
+.content_photos
+  height: 100%
+  margin-left: 20px
+

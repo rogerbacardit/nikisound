@@ -423,6 +423,10 @@ body form.inline p {
   -webkit-transform: rotate(5deg);
   -o-transform: rotate(5deg);
   transform: rotate(5deg);
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 #content .border_last {
   border: 1px solid grey;
@@ -451,6 +455,10 @@ body form.inline p {
   -webkit-transform: rotate(5deg);
   -o-transform: rotate(5deg);
   transform: rotate(5deg);
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 ul.show_list {
@@ -711,11 +719,17 @@ ul.list_opp {
 }
 
 .sub_title {
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
   margin-bottom: 10px;
   font-size: 15px;
   font-weight: 900;
   color: #ca2027;
+}
+
+.movie {
+  margin-left: 20px;
+  margin-right: 0px;
 }
 
 .twit {
@@ -777,4 +791,18 @@ ul.list_opp {
 }
 .twit_act li.last {
   padding-right: 0;
+}
+
+.end {
+  height: 10px;
+  width: 30%;
+  margin: 0px auto;
+  border-bottom: 1px dotted #f9f29d;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.content_photos {
+  height: 100%;
+  margin-left: 20px;
 }
