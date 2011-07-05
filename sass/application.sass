@@ -10,7 +10,7 @@
 @import "compass/utilities/tables/borders"
 @import "compass/css3/border-radius"
 @import "compass/css3/transition"
-
+@import "compass/typography/links/link-colors"
 
 +global-reset
 
@@ -298,7 +298,9 @@ ul.list_opp
     width: 150px
     background: red
     margin-right: 20px
+    margin-bottom: 10px
     float: left
+
   .name_EP
     font-size: 30px
     font-weight: bold
@@ -308,3 +310,15 @@ ul.list_opp
     height: 50px
     width: 290px
     float: right
+
+  .links_music
+    color: #F9F29D
+    float: left
+    height: 20px
+    font-weight: bold
+    +horizontal_list
+    ul
+      padding: 0px
+      li
+        a
+          +link-colors(#F9F29D, black, white, #F9F29D, yellow)

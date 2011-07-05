@@ -123,19 +123,19 @@ body p .right {
 }
 body a {
   text-decoration: underline;
-  color: #db2e34;
+  color: #f9f29d;
 }
 body a:visited {
-  color: #db2e34;
+  color: #f9f29d;
 }
 body a:focus {
-  color: #db2e34;
+  color: #f9f29d;
 }
 body a:hover {
-  color: #db2e34;
+  color: #f9f29d;
 }
 body a:active {
-  color: #db2e34;
+  color: #f9f29d;
 }
 body blockquote {
   margin: 1.5em;
@@ -819,6 +819,7 @@ ul.list_opp {
   width: 150px;
   background: red;
   margin-right: 20px;
+  margin-bottom: 10px;
   float: left;
 }
 .content_music .name_EP {
@@ -831,4 +832,52 @@ ul.list_opp {
   height: 50px;
   width: 290px;
   float: right;
+}
+.content_music .links_music {
+  color: #f9f29d;
+  float: left;
+  height: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+.content_music .links_music li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.content_music .links_music li:first-child, .content_music .links_music li.first {
+  padding-left: 0;
+}
+.content_music .links_music li:last-child {
+  padding-right: 0;
+}
+.content_music .links_music li.last {
+  padding-right: 0;
+}
+.content_music .links_music ul {
+  padding: 0px;
+}
+.content_music .links_music ul li a {
+  color: #f9f29d;
+}
+.content_music .links_music ul li a:visited {
+  color: #f9f29d;
+}
+.content_music .links_music ul li a:focus {
+  color: yellow;
+}
+.content_music .links_music ul li a:hover {
+  color: black;
+}
+.content_music .links_music ul li a:active {
+  color: white;
 }
