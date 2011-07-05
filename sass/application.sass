@@ -281,18 +281,19 @@ ul.list_opp
   margin: 0px auto
   border-bottom: 1px dotted #F9F29D
   margin-top: 20px
-  margin-bottom: 50px
+  margin-bottom: 20px
 
 .content_photos
   height: 100%
   margin-left: 20px
+  margin-bottom: 50px
 
 .content_music
-  height: 309px
+  height: 200px
   width: 80%
   margin: 0px auto
   padding: 20px
-  background: black
+  background: #5B8272
   .thumb_EP
     height: 150px
     width: 150px
@@ -311,14 +312,19 @@ ul.list_opp
     width: 290px
     float: right
 
-  .links_music
-    color: #F9F29D
-    float: left
-    height: 20px
-    font-weight: bold
-    +horizontal_list
-    ul
-      padding: 0px
-      li
-        a
-          +link-colors(#F9F29D, black, white, #F9F29D, yellow)
+.links_music
+  margin-left: 0px
+  height: 20px
+  color: #F9F29D
+  float: none
+  float: left
+  font-weight: bold
+  +horizontal_list
+  +link-colors(#F9F29D, black, white, #F9F29D, yellow)
+.content_music_up
+  height: 160px
+  ul
+    padding: 0px
+    li
+      a
+        margin-left: 0px
