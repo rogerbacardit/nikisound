@@ -1,15 +1,15 @@
-.content_box
+.content_box_full
   .title
    | NEWS
-  .twit
-   .tw_avatar
-   .nick
-    | @ruxii
-   .twitts
-    | RT @jimmyeatworld: Milton Keynes crowd front and center. Thanks to the @foofighters for having us. It was a blast! #fb http://t.co/oEhNZZt
-   .ul.twit_act
-      li.twit_act about 1 minut ago
-      li.twit_act reply
-      li.twit_act retweet
-      li.twit_act favorite
+  #tweets
   .end
+javascript:
+   $(function() {
+       $("#tweets").tweet({
+           query: 'weareniki',
+           join_text: false,
+           avatar_size: 32,
+           count: 5,
+           loading_text: "loading tweets..."
+       });
+   });

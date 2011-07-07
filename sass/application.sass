@@ -31,6 +31,8 @@ body
   // Or leave it in if you're happy with how blueprint looks out-of-the-box
   +blueprint-scaffolding
   background: #2E1313
+  a
+    text-decoration: none
 
 #container
   +container
@@ -95,7 +97,7 @@ ul.list_opp
   padding: 15px
   padding-left: 0px
 
-.content_box_show
+.content_box_full
   padding: 0px
   .title
 
@@ -284,7 +286,7 @@ ul.list_opp
   margin-bottom: 20px
 
 .content_photos
-  height: 100%
+  height: 330px
   margin-left: 20px
   margin-bottom: 50px
 
@@ -328,3 +330,38 @@ ul.list_opp
     li
       a
         margin-left: 0px
+
+#tweets
+  float: center
+  padding: 0px
+  margin: 0px
+
+  ul.tweet_list
+    padding: 0px
+    margin-right: 0px
+    margin-bottom: 30px
+    +no-bullets
+
+    li
+      overflow: hidden
+      border-top: 1px dotted #F9F29D
+      padding-top: 10px
+      padding-bottom: 10px
+      +no-bullets
+      text-decoration: none
+      .tweet_avatar
+        margin-left: 40px
+        +column(1)
+        img
+      .tweet_time, .tweet_text
+        color: #400E12
+        margin-left: 10px
+        +column(3,true)
+      .tweet_time
+        font-size: 10px
+        a
+          color: #400E12
+      .tweet_text
+        width: 350px
+    .tweet_odd
+      background: #902027
