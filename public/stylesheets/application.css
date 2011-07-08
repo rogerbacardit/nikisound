@@ -375,6 +375,23 @@ body a {
   text-decoration: none;
   outline: none;
 }
+body h2 {
+  margin-bottom: 0px;
+}
+
+p {
+  padding: 0px 20px;
+}
+p a {
+  font-weight: bold;
+}
+
+#contact_us {
+  margin-top: 20px;
+}
+#contact_us a {
+  font-size: 1.2em;
+}
 
 #container {
   width: 590px;
@@ -995,6 +1012,7 @@ ul.list_opp {
 
 h2 {
   padding: 0px 20px;
+  margin-bottom: 10px;
 }
 
 #promotion {
