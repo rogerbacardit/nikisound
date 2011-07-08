@@ -64,7 +64,7 @@ $(function(){
   }, 2000);
 
   $("#promotion").mouseenter(function(){
-    $(this).animate({right: 0, top: 25});
+    $(this).animate({right: 0, top: 21});
   });
 
   $("#promotion").mouseleave(function(){
