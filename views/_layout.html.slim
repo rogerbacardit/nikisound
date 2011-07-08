@@ -1,21 +1,29 @@
 html
   head
-    title Example title
+    title We are Niki
     meta charset='utf-8'
     link rel="stylesheet" href="/stylesheets/application.css"
+    link rel="stylesheet" href="/fancybox/fancybox/jquery.fancybox-1.3.4.css"
     script type="text/javascript" src="/javascripts/jquery.js"
     script type="text/javascript" src="/javascripts/jquery.easing.js"
     script type="text/javascript" src="/javascripts/jquery.tweet.js"
     script type="text/javascript" src="/javascripts/application.js"
-    script type="text/javascript" src="/javascripts/soundcloud.player.js"
+    script type="text/javascript" src="/fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"
   body
     #wrapper
       #container
         #content
-          == render partial: 'content_up'
-          == render partial: 'center'
-          == render partial: 'content_down'
+          == render :partial => 'content_up'
+          == render :partial => 'center'
+          == render :partial => 'content_down'
       a id="back" href="#" BACK
       #promotion
         a.scroll href="#music_section"
           span Made of steel
+      #social
+        a#facebook href="http://facebook.com/nikisound" target="_blank"
+          span facebook
+        a#twitter href="http://twitter.com/weareniki" target="_blank"
+          span twitter
+        a#myspace href="http://myspace.com/nikisound" target="_blank"
+          span myspace

@@ -27,6 +27,7 @@ if ENV['RACK_ENV'] != 'production'
   use Sass::Plugin::Rack  # Sass Middleware
 end
 
+
 # Other Rack Middleware
 use Rack::ShowStatus      # Nice looking 404s and other messages
 use Rack::ShowExceptions  # Nice looking errors

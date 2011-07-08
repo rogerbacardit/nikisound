@@ -7,8 +7,11 @@ $(function(){
        query: 'weareniki',
        join_text: false,
        avatar_size: 32,
-       count: 5
+       count: 12
    });
+
+  $("#photos_section a").attr("rel", "gallery");
+  $("#photos_section a").fancybox();
 
   prepareSectionSize();
 
