@@ -5,10 +5,9 @@ html
     link rel="stylesheet" href="/stylesheets/application.css"
     script type="text/javascript" src="/javascripts/jquery.js"
     script type="text/javascript" src="/javascripts/jquery.easing.js"
-    script type="text/javascript" src="/javascripts/jquery.scrollTo.js"
-    script type="text/javascript" src="/javascripts/jquery.localscroll.js"
     script type="text/javascript" src="/javascripts/jquery.tweet.js"
     script type="text/javascript" src="/javascripts/application.js"
+    script type="text/javascript" src="/javascripts/soundcloud.player.js"
   body
     #wrapper
       #container
@@ -16,3 +15,7 @@ html
           == render partial: 'content_up'
           == render partial: 'center'
           == render partial: 'content_down'
+      a id="back" href="#" BACK
+      #promotion
+        a.scroll href="#music_section"
+          span Made of steel

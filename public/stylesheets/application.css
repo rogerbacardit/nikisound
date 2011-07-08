@@ -64,14 +64,20 @@ footer, header, hgroup, menu, nav, section {
   font-style: normal;
 }
 
+#wrapper {
+  overflow: hidden;
+}
+
+html {
+  overflow-y: scroll;
+}
+
 body {
-  overflow-x: hidden;
-  overflow-y: hidden;
   line-height: 1.5;
   font-family: "Trebuchet MS";
   color: #f9f29d;
   font-size: 75%;
-  background: #2e1313;
+  background: #2e1313 url('../images/background.png?1310128018') center center;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-weight: normal;
@@ -397,7 +403,7 @@ body a {
   float: left;
   margin-right: 0;
   width: 590px;
-  background: #ca2027;
+  background: #c2202d;
   float: left;
 }
 * html #content .content_up {
@@ -650,20 +656,20 @@ ul.list_opp {
   margin-right: 45px;
 }
 
-.logo {
+#logo {
   position: relative;
-  background: url('../images/logosite.jpg?1310053739');
+  background: url('../images/logo.png?1310127986');
   height: 373px;
   float: left;
   width: 590px;
 }
-.logo .menu_up {
+#logo .menu_up {
   position: absolute;
   top: 0px;
   left: 0px;
   margin-top: -20px;
 }
-.logo .menu_up .news {
+#logo .menu_up .news {
   background: url('../images/news.png?1310053739');
   height: 108px;
   width: 129px;
@@ -671,41 +677,41 @@ ul.list_opp {
   z-index: 9;
   display: block;
 }
-.logo .menu_up .show {
+#logo .menu_up .show {
   background: url('../images/show.png?1310053739');
   height: 108px;
   width: 153px;
   float: left;
   display: block;
 }
-.logo .menu_up .information {
+#logo .menu_up .information {
   background: url('../images/info.png?1310053739');
   height: 108px;
   width: 125px;
   float: left;
   display: block;
 }
-.logo .menu_down {
+#logo .menu_down {
   position: absolute;
   bottom: 0px;
   right: 0px;
   margin-bottom: -35px;
 }
-.logo .menu_down .music {
+#logo .menu_down .music {
   background: url('../images/music.png?1310053739');
   height: 138px;
   width: 109px;
   float: left;
   display: block;
 }
-.logo .menu_down .videos {
+#logo .menu_down .videos {
   background: url('../images/videos.png?1310053739');
   height: 138px;
   width: 118px;
   float: left;
   display: block;
 }
-.logo .menu_down .photos {
+#logo .menu_down .photos {
   background: url('../images/photos.png?1310053739');
   height: 138px;
   width: 131px;
@@ -722,7 +728,7 @@ ul.list_opp {
   float: left;
   margin-right: 0;
   width: 590px;
-  background: #86c0a9;
+  background: #8bc1a9;
   float: left;
 }
 * html .content_down {
@@ -754,7 +760,7 @@ ul.list_opp {
   width: 80%;
   padding-top: 5px;
   margin-top: -5px;
-  height: 200px;
+  height: 400px;
 }
 
 .nick {
@@ -912,8 +918,8 @@ ul.list_opp {
 #tweets ul.tweet_list {
   padding: 0px;
   margin-right: 0px;
-  margin-bottom: 30px;
   list-style: none;
+  margin: 0px;
 }
 #tweets ul.tweet_list li {
   list-style-image: none;
@@ -965,4 +971,35 @@ ul.list_opp {
 }
 #tweets ul.tweet_list .tweet_odd {
   background: #902027;
+}
+
+#back {
+  position: fixed;
+  bottom: 0px;
+  padding: 20px;
+  font-size: 40px;
+  font-family: "BebasNeue";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+h2 {
+  padding: 0px 20px;
+}
+
+#promotion {
+  position: fixed;
+  top: 0px;
+  right: -150px;
+  height: 192px;
+}
+#promotion a {
+  display: block;
+  background: url('../images/banner_made.png?1310128715');
+  width: 376px;
+  height: 192px;
+}
+#promotion a span {
+  display: none;
 }

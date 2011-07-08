@@ -21,16 +21,12 @@
   font-weight: normal
   font-style: normal
 
-// html, body, #wrapper
-//   height: 100%
-//   width: 100%
-//   margin: 0px
-//   padding: 0px
-//   overflow: hidden
+#wrapper
+  overflow: hidden
+html
+  overflow-y: scroll
 
 body
-  overflow-x: hidden
-  overflow-y: hidden
   +blueprint-typography(true)
   +blueprint-utilities
   +blueprint-debug
@@ -38,7 +34,7 @@ body
   // Remove the scaffolding when you're ready to start doing visual design.
   // Or leave it in if you're happy with how blueprint looks out-of-the-box
   +blueprint-scaffolding
-  background: #2E1313
+  background: #2E1313 image-url('background.png') center center
   a
     text-decoration: none
     outline: none
@@ -54,7 +50,7 @@ body
 
   .content_up
     +column (15, true)
-    background: #CA2027
+    background: #C2202D
     float: left
 
   .border
@@ -182,9 +178,9 @@ ul.list_opp
   li
     margin-right: 45px
 
-.logo
+#logo
   position: relative
-  background: image-url("logosite.jpg")
+  background: image-url("logo.png")
   height: 373px
   float: left
   width: 590px
@@ -249,7 +245,7 @@ ul.list_opp
 
 .content_down
   +column (15, true)
-  background: #86C0A9
+  background: #8BC1A9
   float: left
 
 .sub_title
@@ -273,7 +269,7 @@ ul.list_opp
     width: 80%
     padding-top: 5px
     margin-top: -5px
-    height: 200px
+    height: 400px
 .nick
   font-size: 13px
   font-weight: 900
@@ -358,8 +354,8 @@ ul.list_opp
   ul.tweet_list
     padding: 0px
     margin-right: 0px
-    margin-bottom: 30px
     +no-bullets
+    margin: 0px
 
     li
       overflow: hidden
@@ -384,3 +380,27 @@ ul.list_opp
         width: 350px
     .tweet_odd
       background: #902027
+
+#back
+  position: fixed
+  bottom: 0px
+  padding: 20px
+  font-size: 40px
+  font-family: "BebasNeue"
+  +opacity(0)
+
+h2
+  padding: 0px 20px
+
+#promotion
+  position: fixed
+  top: 0px
+  right: -150px
+  height: 192px
+  a
+    display: block
+    background: image-url("banner_made.png")
+    width: 376px
+    height: 192px
+    span
+      display: none
