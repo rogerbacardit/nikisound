@@ -1,3 +1,5 @@
+source :rubygems
+
 gem "serve"
 gem "activesupport"
 gem "compass"

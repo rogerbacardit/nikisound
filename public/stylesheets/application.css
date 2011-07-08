@@ -65,6 +65,8 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+  overflow-x: hidden;
+  overflow-y: hidden;
   line-height: 1.5;
   font-family: "Trebuchet MS";
   color: #f9f29d;
@@ -365,6 +367,7 @@ body form.inline p {
 }
 body a {
   text-decoration: none;
+  outline: none;
 }
 
 #container {
@@ -384,6 +387,12 @@ body a {
   overflow-x: hidden;
 }
 #content .content_up {
+  padding-bottom: 80%;
+}
+#content .content_down {
+  padding-top: 80%;
+}
+#content .content_up {
   display: inline;
   float: left;
   margin-right: 0;
@@ -393,11 +402,6 @@ body a {
 }
 * html #content .content_up {
   overflow-x: hidden;
-}
-#content .content_up .menu_up {
-  margin-top: 638px;
-  overflow: auto;
-  position: relative;
 }
 #content .border {
   border: 1px solid grey;
@@ -647,60 +651,73 @@ ul.list_opp {
 }
 
 .logo {
-  background: url('../images/logosite.jpg?1307895623');
-  margin-top: -35px;
+  position: relative;
+  background: url('../images/logosite.jpg?1310053739');
   height: 373px;
   float: left;
   width: 590px;
 }
-.logo .news {
-  background: url('../images/news.png?1307898445');
+.logo .menu_up {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-top: -20px;
+}
+.logo .menu_up .news {
+  background: url('../images/news.png?1310053739');
   height: 108px;
   width: 129px;
   float: left;
   z-index: 9;
-  margin-top: -20px;
+  display: block;
 }
-.logo .show {
-  background: url('../images/show.png?1307898467');
+.logo .menu_up .show {
+  background: url('../images/show.png?1310053739');
   height: 108px;
   width: 153px;
   float: left;
-  margin-top: -20px;
+  display: block;
 }
-.logo .information {
-  background: url('../images/info.png?1307898485');
+.logo .menu_up .information {
+  background: url('../images/info.png?1310053739');
   height: 108px;
   width: 125px;
   float: left;
-  margin-top: -20px;
+  display: block;
 }
-.logo .music {
-  background: url('../images/music.png?1307900150');
+.logo .menu_down {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-bottom: -35px;
+}
+.logo .menu_down .music {
+  background: url('../images/music.png?1310053739');
   height: 138px;
   width: 109px;
-  float: right;
-  position: relative;
-  margin-top: 240px;
+  float: left;
+  display: block;
 }
-.logo .videos {
-  background: url('../images/videos.png?1307900165');
+.logo .menu_down .videos {
+  background: url('../images/videos.png?1310053739');
   height: 138px;
   width: 118px;
-  float: right;
-  position: relative;
-  margin-top: 184px;
+  float: left;
+  display: block;
 }
-.logo .photos {
-  background: url('../images/photos.png?1307900186');
+.logo .menu_down .photos {
+  background: url('../images/photos.png?1310053739');
   height: 138px;
   width: 131px;
-  float: right;
-  position: relative;
-  margin-top: 220px;
+  float: left;
+  display: block;
 }
 
-.downcontent {
+.section {
+  display: block;
+}
+
+.content_down {
   display: inline;
   float: left;
   margin-right: 0;
@@ -708,17 +725,8 @@ ul.list_opp {
   background: #86c0a9;
   float: left;
 }
-* html .downcontent {
+* html .content_down {
   overflow-x: hidden;
-}
-.downcontent .menu_down {
-  -moz-transform: skew(0deg, -8deg);
-  -webkit-transform: skew(0deg, -8deg);
-  -o-transform: skew(0deg, -8deg);
-  transform: skew(0deg, -8deg);
-  margin-top: -120px;
-  float: right;
-  width: 358px;
 }
 
 .sub_title {
@@ -746,6 +754,7 @@ ul.list_opp {
   width: 80%;
   padding-top: 5px;
   margin-top: -5px;
+  height: 200px;
 }
 
 .nick {
@@ -898,6 +907,7 @@ ul.list_opp {
   float: center;
   padding: 0px;
   margin: 0px;
+  height: 800px;
 }
 #tweets ul.tweet_list {
   padding: 0px;

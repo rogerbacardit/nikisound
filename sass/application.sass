@@ -21,8 +21,16 @@
   font-weight: normal
   font-style: normal
 
+// html, body, #wrapper
+//   height: 100%
+//   width: 100%
+//   margin: 0px
+//   padding: 0px
+//   overflow: hidden
 
 body
+  overflow-x: hidden
+  overflow-y: hidden
   +blueprint-typography(true)
   +blueprint-utilities
   +blueprint-debug
@@ -33,19 +41,22 @@ body
   background: #2E1313
   a
     text-decoration: none
+    outline: none
 
 #container
   +container
 #content
   +column($blueprint-grid-columns, true)
   .content_up
+    padding-bottom: 80%
+  .content_down
+    padding-top: 80%
+
+  .content_up
     +column (15, true)
     background: #CA2027
     float: left
-    .menu_up
-      margin-top: 638px
-      overflow: auto
-      position: relative
+
   .border
     border: 1px solid grey
     width: 130px
@@ -172,67 +183,74 @@ ul.list_opp
     margin-right: 45px
 
 .logo
+  position: relative
   background: image-url("logosite.jpg")
-  margin-top: -35px
   height: 373px
   float: left
   width: 590px
-  .news
-    background: image-url('news.png')
-    height: 108px
-    width: 129px
-    float: left
-    z-index: 9
+  .menu_up
+    position: absolute
+    top: 0px
+    left: 0px
     margin-top: -20px
-  .show
-    background: image-url('show.png')
-    height: 108px
-    width: 153px
-    float: left
-    margin-top: -20px
-  .information
-    background: image-url('info.png')
-    height: 108px
-    width: 125px
-    float: left
-    margin-top: -20px
+    .news
+      background: image-url('news.png')
+      height: 108px
+      width: 129px
+      float: left
+      z-index: 9
+      display: block
 
-  .music
-    background: image-url('music.png')
-    height: 138px
-    width: 109px
-    float: right
-    position: relative
-    margin-top: 240px
+    .show
+      background: image-url('show.png')
+      height: 108px
+      width: 153px
+      float: left
+      display: block
+
+    .information
+      background: image-url('info.png')
+      height: 108px
+      width: 125px
+      float: left
+      display: block
+
+  .menu_down
+    position: absolute
+    bottom: 0px
+    right: 0px
+    margin-bottom: -35px
+
+    .music
+      background: image-url('music.png')
+      height: 138px
+      width: 109px
+      float: left
+      display: block
+
+    .videos
+      background: image-url('videos.png')
+      height: 138px
+      width: 118px
+      float: left
+      display: block
 
 
-  .videos
-    background: image-url('videos.png')
-    height: 138px
-    width: 118px
-    float: right
-    position: relative
-    margin-top: 184px
+    .photos
+      background: image-url('photos.png')
+      height: 138px
+      width: 131px
+      float: left
+      display: block
+
+.section
+  display: block
 
 
-  .photos
-    background: image-url('photos.png')
-    height: 138px
-    width: 131px
-    float: right
-    position: relative
-    margin-top: 220px
-
-
-.downcontent
+.content_down
   +column (15, true)
   background: #86C0A9
   float: left
-  .menu_down
-    +skew (0deg, -8deg, false)
-    margin-top: -120px
-    float: right
-    width: 358px
 
 .sub_title
   margin-top: 30px
@@ -255,6 +273,7 @@ ul.list_opp
     width: 80%
     padding-top: 5px
     margin-top: -5px
+    height: 200px
 .nick
   font-size: 13px
   font-weight: 900
@@ -335,7 +354,7 @@ ul.list_opp
   float: center
   padding: 0px
   margin: 0px
-
+  height: 800px
   ul.tweet_list
     padding: 0px
     margin-right: 0px
