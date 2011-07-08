@@ -1,7 +1,23 @@
+(function($) {
+  var cache = [];
+  // Arguments are image paths relative to the current page.
+  $.preLoadImages = function() {
+    var args_len = arguments.length;
+    for (var i = args_len; i--;) {
+      var cacheImage = document.createElement('img');
+      cacheImage.src = arguments[i];
+      cache.push(cacheImage);
+    }
+  }
+})(jQuery)
+
+
+
 var current_position = 0;
 var centered_logo_top = 0;
 
 $(function(){
+
 
    $("#tweets").tweet({
        query: 'weareniki',
@@ -36,6 +52,8 @@ $(function(){
     $(this).animate({opacity: 0}, {queue: false});
     return false;
   });
+
+  jQuery.preLoadImages("/images/logo.png", "/images/news.png", "/images/show.png", "/images/info.png", "/images/music.png", "/images/videos.png", "/images/photos.png");
 
   setTimeout(function(){
     $("#content").animate({opacity: 1}, {duration: 4000, queue: false});
@@ -83,3 +101,5 @@ function scrollToPosition(position){
   $("#content").animate({'margin-top': -position}, {queue: false});
   $("#back").animate({opacity: 1}, {queue: false});
 }
+
+
