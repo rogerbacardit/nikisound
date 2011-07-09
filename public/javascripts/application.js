@@ -43,7 +43,7 @@ $(function(){
     return false;
   });
 
-  $("#back").css('left', $(window).width()/2+$("#content").width()/2);
+  $("#back").css('right', $(window).width()/2+$("#content").width()/2);
 
   $("#back").click(function(){
     goToLogo();
