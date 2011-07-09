@@ -98,6 +98,13 @@ function scrollTo(element){
 
 function scrollToPosition(position){
   $("#content").animate({'margin-top': -position}, {queue: false});
+  if(position > centered_logo_top){
+    $("#back").css('top', 0);
+    $("#back").css('bottom', "");
+  }else{
+    $("#back").css('top', "");
+    $("#back").css('bottom', 0);
+  }
   $("#back").animate({opacity: 1}, {queue: false});
 }
 
