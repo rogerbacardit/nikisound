@@ -62,7 +62,7 @@ p
 
   .content_up
     +column (15, true)
-    background: #C2202D
+    background: #c91f27
     float: left
 
   .border
@@ -195,11 +195,18 @@ ul.list_opp
 
 #logo
   position: relative
-  background: image-url("logo.png")
+  background: image-url("logo_bars.png")
   height: 373px
   float: left
   width: 590px
+  #logo_inside
+    height: 373px
+    width: 590px
+    background: image-url("logo.png")
+    position: relative
+    z-index: 10
   .menu_up
+    z-index: 20
     position: absolute
     top: 0px
     left: 0px
@@ -227,6 +234,7 @@ ul.list_opp
       display: block
 
   .menu_down
+    z-index: 20
     position: absolute
     bottom: 0px
     right: 0px
@@ -260,7 +268,7 @@ ul.list_opp
 
 .content_down
   +column (15, true)
-  background: #8BC1A9
+  background: #85c0a9
   float: left
 
 .sub_title

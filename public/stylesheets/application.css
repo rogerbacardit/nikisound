@@ -77,7 +77,7 @@ body {
   font-family: "Trebuchet MS";
   color: #f9f29d;
   font-size: 75%;
-  background: #2e1313 url('../images/background.png?1310128018') center center;
+  background: #2e1313 url('../images/background.png?1310147862') center center;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-weight: normal;
@@ -420,7 +420,7 @@ p a {
   float: left;
   margin-right: 0;
   width: 590px;
-  background: #c2202d;
+  background: #c91f27;
   float: left;
 }
 * html #content .content_up {
@@ -684,19 +684,27 @@ ul.list_opp {
 
 #logo {
   position: relative;
-  background: url('../images/logo.png?1310127986');
+  background: url('../images/logo_bars.png?1310205400');
   height: 373px;
   float: left;
   width: 590px;
 }
+#logo #logo_inside {
+  height: 373px;
+  width: 590px;
+  background: url('../images/logo.png?1310205042');
+  position: relative;
+  z-index: 10;
+}
 #logo .menu_up {
+  z-index: 20;
   position: absolute;
   top: 0px;
   left: 0px;
   margin-top: -20px;
 }
 #logo .menu_up .news {
-  background: url('../images/news.png?1310053739');
+  background: url('../images/news.png?1310067571');
   height: 108px;
   width: 129px;
   float: left;
@@ -704,41 +712,42 @@ ul.list_opp {
   display: block;
 }
 #logo .menu_up .show {
-  background: url('../images/show.png?1310053739');
+  background: url('../images/show.png?1310067571');
   height: 108px;
   width: 153px;
   float: left;
   display: block;
 }
 #logo .menu_up .information {
-  background: url('../images/info.png?1310053739');
+  background: url('../images/info.png?1310067571');
   height: 108px;
   width: 125px;
   float: left;
   display: block;
 }
 #logo .menu_down {
+  z-index: 20;
   position: absolute;
   bottom: 0px;
   right: 0px;
   margin-bottom: -35px;
 }
 #logo .menu_down .music {
-  background: url('../images/music.png?1310053739');
+  background: url('../images/music.png?1310067571');
   height: 138px;
   width: 109px;
   float: left;
   display: block;
 }
 #logo .menu_down .videos {
-  background: url('../images/videos.png?1310053739');
+  background: url('../images/videos.png?1310067571');
   height: 138px;
   width: 118px;
   float: left;
   display: block;
 }
 #logo .menu_down .photos {
-  background: url('../images/photos.png?1310053739');
+  background: url('../images/photos.png?1310067571');
   height: 138px;
   width: 131px;
   float: left;
@@ -754,7 +763,7 @@ ul.list_opp {
   float: left;
   margin-right: 0;
   width: 590px;
-  background: #8bc1a9;
+  background: #85c0a9;
   float: left;
 }
 * html .content_down {
@@ -1023,7 +1032,7 @@ h2 {
 }
 #promotion a {
   display: block;
-  background: url('../images/banner_made.png?1310128715');
+  background: url('../images/banner_made.png?1310147862');
   width: 376px;
   height: 192px;
 }
@@ -1054,11 +1063,11 @@ h2 {
   display: none;
 }
 #social #facebook {
-  background: url('../images/social/facebook.png?1310131278');
+  background: url('../images/social/facebook.png?1310147863');
 }
 #social #twitter {
-  background: url('../images/social/twitter.png?1310131289');
+  background: url('../images/social/twitter.png?1310147863');
 }
 #social #myspace {
-  background: url('../images/social/myspace.png?1310131293');
+  background: url('../images/social/myspace.png?1310147863');
 }
