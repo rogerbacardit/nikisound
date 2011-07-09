@@ -11,8 +11,6 @@
   }
 })(jQuery)
 
-
-
 var current_position = 0;
 var centered_logo_top = 0;
 
@@ -57,6 +55,7 @@ $(function(){
 
   setTimeout(function(){
     $("#content").animate({opacity: 1}, {duration: 4000, queue: false});
+    blinkLogo(true);
   }, 1000);
 
   setTimeout(function(){
@@ -102,4 +101,16 @@ function scrollToPosition(position){
   $("#back").animate({opacity: 1}, {queue: false});
 }
 
-
+function blinkLogo(state){
+  if(state == true){
+    setTimeout(function(){
+      $("#logo_inside").animate({opacity: 0.8}, 100)
+      blinkLogo(false);
+    }, Math.floor(Math.random() * 3000));
+  }else{
+    setTimeout(function(){
+      $("#logo_inside").animate({opacity: 1}, 80)
+      blinkLogo(true);
+    }, 80);
+  }
+}
