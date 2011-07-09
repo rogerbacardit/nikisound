@@ -692,9 +692,19 @@ ul.list_opp {
 #logo #logo_inside {
   height: 373px;
   width: 590px;
-  background: url('../images/logo.png?1310205042');
+  background: url('../images/logo.png?1310205477');
   position: relative;
   z-index: 10;
+}
+#logo a {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+#logo a:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }
 #logo .menu_up {
   z-index: 20;
