@@ -111,12 +111,12 @@ function scrollToPosition(position){
 function blinkLogo(state){
   if(state == true){
     setTimeout(function(){
-      $("#logo_inside").animate({opacity: 0.8}, 100)
+      $("#logo_inside").css('opacity', 0.8)
       blinkLogo(false);
     }, Math.floor(Math.random() * 3000));
   }else{
     setTimeout(function(){
-      $("#logo_inside").animate({opacity: 1}, 80)
+      $("#logo_inside").css('opacity', 1)
       blinkLogo(true);
     }, 80);
   }
