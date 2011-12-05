@@ -1056,9 +1056,30 @@ h2 {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  width: 60px;
+  width: 130px;
 }
-#social #facebook, #social #twitter, #social #googleplus {
+#social .facebook, #social .twitter, #social .googleplus {
   display: block;
   margin-top: 10px;
+}
+#social #buttons {
+  margin-top: 20px;
+}
+#social #buttons a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+#social #buttons a span {
+  display: none;
+}
+#social #buttons .facebook {
+  background: url('../images/social/facebook.png?1323102353');
+}
+#social #buttons .twitter {
+  background: url('../images/social/twitter.png?1323102353');
+}
+#social #buttons .myspace {
+  background: url('../images/social/myspace.png?1323102353');
 }
