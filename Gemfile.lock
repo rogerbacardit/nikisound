@@ -19,7 +19,7 @@ GEM
       tzinfo (~> 0.3.27)
     sinatra (1.2.6)
       rack (~> 1.1)
-      tilt (< 2.0, >= 1.2.2)
+      tilt (>= 1.2.2, < 2.0)
     slim (0.9.4)
       temple (~> 0.3.0)
       tilt (~> 1.2)

@@ -11,6 +11,7 @@ html
     script type="text/javascript" src="/javascripts/application.js"
     script type="text/javascript" src="/fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"
   body
+    #fb-root
     #wrapper
       #container
         #content
@@ -22,12 +23,20 @@ html
         a.scroll href="#music_section"
           span Made of steel
       #social
-        a#facebook href="http://facebook.com/nikisound" target="_blank"
-          span facebook
-        a#twitter href="http://twitter.com/weareniki" target="_blank"
-          span twitter
-        a#myspace href="http://myspace.com/nikisound" target="_blank"
-          span myspace
+        #facebook
+          div class="fb-like" data-href="https://www.facebook.com/nikisound" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false"
+
+        #twitter
+          a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="weareniki" Tweet
+          script type="text/javascript" src="//platform.twitter.com/widgets.js"
+        #googleplus
+          g:plusone size="tall" href="http://niki.fm"
+          javascript:
+            (function() {
+              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+              po.src = 'https://apis.google.com/js/plusone.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
 
     script type="text/javascript"
       | var GoSquared={};
@@ -40,3 +49,12 @@ html
       |    }
       |    w.addEventListener?w.addEventListener("load",gs,false):w.attachEvent("onload",gs);
       |  })(window);
+
+    javascript:
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=243483152352657";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));

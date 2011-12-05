@@ -36,7 +36,7 @@ body
   +blueprint-scaffolding
   background: #2E1313 image-url('background.png') center center
   a
-    text-decoration: none
+    text-decoration: underline
     outline: none
   h2
     margin-bottom: 0px
@@ -415,6 +415,7 @@ ul.list_opp
   font-size: 40px
   font-family: "BebasNeue"
   text-align: right
+  text-decoration: none
   +opacity(0)
 
 h2
@@ -438,19 +439,7 @@ h2
   position: fixed
   bottom: 20px
   left: 20px
-  a
+  width: 60px
+  #facebook, #twitter, #googleplus
     display: block
     margin-top: 10px
-    width: 32px
-    height: 32px
-    +opacity(0.6)
-    &:hover
-      +opacity(1)
-    span
-      display: none
-  #facebook
-    background: image-url("social/facebook.png")
-  #twitter
-    background: image-url("social/twitter.png")
-  #myspace
-    background: image-url("social/myspace.png")
