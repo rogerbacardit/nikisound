@@ -7,4 +7,6 @@ gem "sass"
 gem "rack"
 gem "slim"
 
+gem 'rdiscount'
+
 gem 'sinatra'

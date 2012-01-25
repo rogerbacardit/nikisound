@@ -43,7 +43,7 @@ $(function(){
     return false;
   });
 
-  $("#back").css('left', $(window).width()/2+$("#content").width()/2);
+  $("#back").css('right', $(window).width()/2+$("#content").width()/2);
 
   $("#back").click(function(){
     goToLogo();
@@ -98,18 +98,25 @@ function scrollTo(element){
 
 function scrollToPosition(position){
   $("#content").animate({'margin-top': -position}, {queue: false});
+  if(position > centered_logo_top){
+    $("#back").css('top', 0);
+    $("#back").css('bottom', "");
+  }else{
+    $("#back").css('top', "");
+    $("#back").css('bottom', 0);
+  }
   $("#back").animate({opacity: 1}, {queue: false});
 }
 
 function blinkLogo(state){
   if(state == true){
     setTimeout(function(){
-      $("#logo_inside").animate({opacity: 0.8}, 100)
+      $("#logo_inside").css('opacity', 0.8)
       blinkLogo(false);
     }, Math.floor(Math.random() * 3000));
   }else{
     setTimeout(function(){
-      $("#logo_inside").animate({opacity: 1}, 80)
+      $("#logo_inside").css('opacity', 1)
       blinkLogo(true);
     }, 80);
   }

@@ -76,7 +76,11 @@ body {
   font-family: "Trebuchet MS";
   color: #f9f29d;
   font-size: 75%;
+<<<<<<< HEAD
   background: #2e1313 url('../images/background.png?1310128018') center center;
+=======
+  background: #2e1313 url('../images/background.png?1323102353') center center;
+>>>>>>> 0945d9a56fc4bc10dffc377a0b55dc72daa83d86
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-weight: normal;
@@ -372,7 +376,7 @@ body form.inline p {
   margin-bottom: 0;
 }
 body a {
-  text-decoration: none;
+  text-decoration: underline;
   outline: none;
 }
 body h2 {
@@ -686,7 +690,11 @@ ul.list_opp {
 
 #logo {
   position: relative;
+<<<<<<< HEAD
   background: url('../images/logo_bars.png?1327514789');
+=======
+  background: url('../images/logo_bars.png?1323102353');
+>>>>>>> 0945d9a56fc4bc10dffc377a0b55dc72daa83d86
   height: 373px;
   float: left;
   width: 590px;
@@ -694,7 +702,11 @@ ul.list_opp {
 #logo #logo_inside {
   height: 373px;
   width: 590px;
+<<<<<<< HEAD
   background: url('../images/logo.png?1327514789');
+=======
+  background: url('../images/logo.png?1323102353');
+>>>>>>> 0945d9a56fc4bc10dffc377a0b55dc72daa83d86
   position: relative;
   z-index: 10;
 }
@@ -714,7 +726,11 @@ ul.list_opp {
   margin-top: -20px;
 }
 #logo .menu_up .news {
+<<<<<<< HEAD
   background: url('../images/news.png?1310053739');
+=======
+  background: url('../images/news.png?1323102353');
+>>>>>>> 0945d9a56fc4bc10dffc377a0b55dc72daa83d86
   height: 108px;
   width: 129px;
   float: left;
@@ -722,14 +738,22 @@ ul.list_opp {
   display: block;
 }
 #logo .menu_up .show {
+<<<<<<< HEAD
   background: url('../images/show.png?1310053739');
+=======
+  background: url('../images/show.png?1323102353');
+>>>>>>> 0945d9a56fc4bc10dffc377a0b55dc72daa83d86
   height: 108px;
   width: 153px;
   float: left;
   display: block;
 }
 #logo .menu_up .information {
+<<<<<<< HEAD
   background: url('../images/info.png?1310053739');
+=======
+  background: url('../images/info.png?1323102353');
+>>>>>>> 0945d9a56fc4bc10dffc377a0b55dc72daa83d86
   height: 108px;
   width: 125px;
   float: left;
@@ -743,21 +767,33 @@ ul.list_opp {
   margin-bottom: -35px;
 }
 #logo .menu_down .music {
+<<<<<<< HEAD
   background: url('../images/music.png?1310053739');
+=======
+  background: url('../images/music.png?1323102353');
+>>>>>>> 0945d9a56fc4bc10dffc377a0b55dc72daa83d86
   height: 138px;
   width: 109px;
   float: left;
   display: block;
 }
 #logo .menu_down .videos {
+<<<<<<< HEAD
   background: url('../images/videos.png?1310053739');
+=======
+  background: url('../images/videos.png?1323102353');
+>>>>>>> 0945d9a56fc4bc10dffc377a0b55dc72daa83d86
   height: 138px;
   width: 118px;
   float: left;
   display: block;
 }
 #logo .menu_down .photos {
+<<<<<<< HEAD
   background: url('../images/photos.png?1310053739');
+=======
+  background: url('../images/photos.png?1323102353');
+>>>>>>> 0945d9a56fc4bc10dffc377a0b55dc72daa83d86
   height: 138px;
   width: 131px;
   float: left;
@@ -1024,6 +1060,12 @@ ul.list_opp {
   padding: 20px;
   font-size: 40px;
   font-family: "BebasNeue";
+<<<<<<< HEAD
+=======
+  text-align: right;
+  text-decoration: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+>>>>>>> 0945d9a56fc4bc10dffc377a0b55dc72daa83d86
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
@@ -1041,7 +1083,11 @@ h2 {
 }
 #promotion a {
   display: block;
+<<<<<<< HEAD
   background: url('../images/banner_made.png?1310128715');
+=======
+  background: url('../images/banner_made.png?1323102353');
+>>>>>>> 0945d9a56fc4bc10dffc377a0b55dc72daa83d86
   width: 376px;
   height: 192px;
 }
@@ -1053,10 +1099,12 @@ h2 {
   position: fixed;
   bottom: 20px;
   left: 20px;
+  width: 60px;
 }
-#social a {
+#social #facebook, #social #twitter, #social #googleplus {
   display: block;
   margin-top: 10px;
+<<<<<<< HEAD
   width: 32px;
   height: 32px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
@@ -1077,4 +1125,6 @@ h2 {
 }
 #social #myspace {
   background: url('../images/social/myspace.png?1310131293');
+=======
+>>>>>>> 0945d9a56fc4bc10dffc377a0b55dc72daa83d86
 }
