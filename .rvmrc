@@ -1,1 +1,1 @@
-rvm --create use ruby-head@nikisound
+rvm --create use 1.9.3@nikisound
